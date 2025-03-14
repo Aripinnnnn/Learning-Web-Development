@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="Tugas1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+        <form action="#" method="post">
+            <!-- NPM -->
+            <label for="npm">NPM (Nomor Pokok Mahasiswa)</label><br>
+            <input type="number" id="npm" name="npm" required> <br>
+            <!-- Nama -->
+            <label for="nama">Nama Lengkap</label><br>
+            <input type="text" id="nama" name="nama" required><br>
+            <!-- Alamat -->
+            <label for="alamat">Alamat</label><br>
+            <textarea name="alamat" id="alamat" required></textarea><br>
+            <!-- Jenis Kelamin -->
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label for="laki-laki">Laki-Laki</label><br>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                <label for="perempuan">Perempuan</label>
+            </div>
+            <!-- Program Studi -->
+            <label for="program-studi">Program Studi</label><br>
+            <select name="program_studi" id="program-studi" required>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Desain Komunikasi Visual">Dll</option>
+            </select><br>
+            <!-- Tombol Submit -->
+            <button type="submit">Tambah</button>
+        </form>
+    </div>
+</body>
+</html>
